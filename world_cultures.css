@@ -84,6 +84,14 @@
     font-size: 18px;
     margin-top: 60px;
 }
+
+.text2 {
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 18px;
+    margin-top: 60px;
+}
+
 .opt:hover {
     background-color: white;
 }
