@@ -41,17 +41,45 @@
         
     </div>
 
-    <div class="text">
-        <p id="map">Interactive Map:
-        </p>
-    
-        <div class="mapouter" z-index="-1"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20New%20York,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a><br><style>.mapouter{position:relative;text-align:center;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google maps on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
-        <p>Google Maps</p>
-        <div>
-            <img src='https://sep.yimg.com/ay/yhst-18011380714966/odessa-illuminated-world-globe-2.gif' height="140px" width="140px">
+    <div class='text'>
+        <p id="map">Interactive Map and UNESCO Cultural Sites:
+    </p>
+
+    <div class="mapouter" z-index="-1">
+        <div class="gmap_canvas" id='Ang'><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Ankor%20Wat,%20Cambodia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a><br><style>.mapouter{position:relative;text-align:center;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google maps on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+
+        <div class="gmap_canvas hide" id='Roc'><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Zuojiang%20Huashan%20Rock%20Art,%20China&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a><br><style>.mapouter{position:relative;text-align:center;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google maps on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+
+        <div class="gmap_canvas hide" id='Gre'><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Great%20Zimbabwe,%20Zimbabwe&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a><br><style>.mapouter{position:relative;text-align:center;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google maps on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+        <div id="mapnext" z-index="-1">
+            <div class="mapOptions">
+                <div class="opt" id="Angkor"><h4>Angkor</h4></div>
+                <div class="opt" id="Rock"><h4>Rock Art</h4></div>
+                <div class="opt" id="Great"><h4>Great Zimbabwe</h4></div>
+            </div>
+            <p class="description" id="Ang2">
+                Angkor is one of the most important archaeological sites in South-East Asia. Stretching over some 400 km2, including forested area, Angkor Archaeological Park contains the magnificent remains of the different capitals of the Khmer Empire, from the 9th to the 15th century. They include the famous Temple of Angkor Wat and, at Angkor Thom, the Bayon Temple with its countless sculptural decorations. UNESCO has set up a wide-ranging programme to safeguard this symbolic site and its surroundings.
+
+            </p>
+            <p class='description hide' id='Roc2'>
+                Located on the steep cliffs in the border regions of southwest China, these 38 sites of rock art illustrate the life and rituals of the Luoyue people. They date from the period around the 5th century BCE to the 2nd century CE. In a surrounding landscape of karst, rivers and plateaux, they depict ceremonies that have been interpreted as portraying the bronze drum culture once prevalent across southern China. This cultural landscape is the only remains of this culture today.
+            </p>
+            <p class='description hide' id = 'Gre2'>
+                The ruins of Great Zimbabwe – the capital of the Queen of Sheba, according to an age-old legend – are a unique testimony to the Bantu civilization of the Shona between the 11th and 15th centuries. The city, which covers an area of nearly 80 ha, was an important trading center and was renowned from the Middle Ages onwards.
+            </p>
+            
+            
         </div>
         
     </div>
+    <p>Google Maps</p>
+    <a id="source" href='https://whc.unesco.org/en/list/'>Source of information</a>
+
+    <div class="foot">
+        <p id="footer">World Cultures</p>
+    </div>
+    </div>
     <script src="world_cultures.js"></script>
+    <script src="map_use.js"></script>
 </body>
 </html>

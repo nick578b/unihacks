@@ -3,6 +3,129 @@
     padding: 0px;
 }
 
+#source {
+    color: blue;
+}
+
+#source:hover {
+    color:cyan;
+}
+
+#map {
+    font-size: 30px;
+}
+
+#mapnext {
+    width: 450px;
+    position: absolute;
+    left: 600px;
+}
+
+.hide {
+    display: none;
+}
+
+.description {
+    margin: 10px;
+    left: 0px;
+    position: absolute;
+}
+
+
+
+#p {
+    padding-top: 35px;
+}
+
+#i {
+    left:0%;
+    position: relative;
+}
+
+
+#link {
+    text-decoration: none;
+    color: blue;
+}
+
+#link:hover {
+    color: cyan;
+}
+
+#second_header {
+    padding-top: 35px;
+}
+
+
+#imgholder {
+    display: flex;
+}
+
+.imgtext {
+    padding-top: 0px;
+    display: inline-flex;
+}
+
+.text {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+
+.text {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+    margin-top: 60px;
+}
+.opt:hover {
+    background-color: white;
+}
+
+.opt {
+    width: 150px;
+    height: 30px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-color: black;
+
+}
+
+.mapOptions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mapouter {
+    display: flex;
+    width: 1200px;
+    justify-content: space-around;
+
+}
+
+.foot {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 50px;
+    padding-left: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    background-color: blue;
+    height: 100px;
+}
+
+#footer {
+    
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-content: center;
+    color: white;
+    font-size: 24px;
+}
 
 .sticky {
     position: fixed;
@@ -18,11 +141,8 @@ a:hover { text-decoration: none; color:white }
 a:focus { text-decoration: none; color:white; }
 a:hover, a:active { text-decoration: none; color:white }
 
-.text {
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 18px;
-    margin-top: 60px;
+a {
+    text-decoration: none;
 }
 
 .drop {
