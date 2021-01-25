@@ -1,4 +1,4 @@
-let questions = [['Question 1: What religion(s) is/are most common in China?', 'Islam', 'Roman Catholicism', 'Folk religions & Buddhism', 3],
+['Question 1: What religion(s) is/are most common in China?', 'Islam', 'Roman Catholicism', 'Folk religions & Buddhism', 3],
 ['Question 2: What religion(s) is/are most common in Poland?', 'Christianity', 'Roman Catholicism', 'Islam', 2],
 ['Question 3: What religion(s) is/are most common in Algeria?', 'Islam', 'Catholicism', 'Christianity', 1],
 ['Question 4: What religion(s) is/are most common in Nepal?', 'Folk religions & Buddhism', 'Hinduism', 'Roman Catholicism', 2],
@@ -397,52 +397,4 @@ let questions = [['Question 1: What religion(s) is/are most common in China?', '
 ['Question 397: What religion(s) is/are most common in South Korea?', 'Christianity', 'Shinto and Buddhism', 'Irreligious', 3],
 ['Question 398: What religion(s) is/are most common in Vietnam?', 'Roman Catholicism', 'Islam', 'Buddhism and Catholicism', 3],
 ['Question 399: What religion(s) is/are most common in DR Congo?', 'Roman Catholicism', 'Christianity', 'Islam', 1],
-['Question 400: What religion(s) is/are most common in Sudan?', 'Roman Catholicism', 'Irreligious', 'Islam', 3]];
-let questionID = 1;
-    
-let title = document.getElementById('question')
-let but1 = document.getElementById('but1');
-let but2 = document.getElementById('but2');
-let but3 = document.getElementById('but3');
-let correct = document.getElementById('correct');
-let incorrect = document.getElementById('incorrect');
-
-//check(-1);
-console.log(questions[0][0]);
-correct.classList.add('hide');
-incorrect.classList.add('hide');
-
-title.textContent = questions[questionID][0];
-but1.textContent = questions[questionID][1];
-but2.textContent = questions[questionID][2];
-but3.textContent = questions[questionID][3];
-
-but1.addEventListener('click', ()=> {
-    check('1')
-})
-but2.addEventListener('click', ()=> {
-    check('2')
-})
-but3.addEventListener('click', ()=> {
-    check('3')
-})
-
-function check(string) {
-    if(questions[questionID][4] == string)
-    {
-        correct.classList.remove('hide');
-        incorrect.classList.add('hide');
-    }
-    else {
-        correct.classList.add('hide');
-        incorrect.classList.remove('hide');
-
-    }
-
-    questionID = Math.floor(Math.random() * questions.length);
-    title.textContent = questions[questionID][0];
-    but1.textContent = questions[questionID][1];
-    but2.textContent = questions[questionID][2];
-    but3.textContent = questions[questionID][3];
-
-}
+['Question 400: What religion(s) is/are most common in Sudan?', 'Roman Catholicism', 'Irreligious', 'Islam', 3],

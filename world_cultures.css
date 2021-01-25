@@ -3,6 +3,14 @@
     padding: 0px;
 }
 
+
+
+#but1, #but2, #but3 {
+    width: 175px;
+    height: 75px;
+}
+
+
 #new {
     margin-top: 25px;
 }
@@ -46,6 +54,9 @@
     position: relative;
 }
 
+#question {
+    margin-bottom: 25px;
+}
 
 #link {
     text-decoration: none;
